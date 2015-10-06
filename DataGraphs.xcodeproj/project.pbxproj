@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3D50241BC3F8F50052C952 /* StandardGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D50221BC3F8F50052C952 /* StandardGraphView.swift */; settings = {ASSET_TAGS = (); }; };
+		0A3D50251BC3F8F50052C952 /* TimeBasedGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D50231BC3F8F50052C952 /* TimeBasedGraphView.swift */; settings = {ASSET_TAGS = (); }; };
 		0A6F9EB11BB9BA9100CF2552 /* DataGraphs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6F9EB01BB9BA9100CF2552 /* DataGraphs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A6F9EB81BB9BA9100CF2552 /* DataGraphs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6F9EAD1BB9BA9100CF2552 /* DataGraphs.framework */; settings = {ASSET_TAGS = (); }; };
 		0A6F9EBD1BB9BA9100CF2552 /* DataGraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F9EBC1BB9BA9100CF2552 /* DataGraphsTests.swift */; };
+		0A6F9ECA1BB9BADD00CF2552 /* CircularGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F9EC71BB9BADD00CF2552 /* CircularGraphView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3D50221BC3F8F50052C952 /* StandardGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardGraphView.swift; sourceTree = "<group>"; };
+		0A3D50231BC3F8F50052C952 /* TimeBasedGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBasedGraphView.swift; sourceTree = "<group>"; };
 		0A6F9EAD1BB9BA9100CF2552 /* DataGraphs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataGraphs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6F9EB01BB9BA9100CF2552 /* DataGraphs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataGraphs.h; sourceTree = "<group>"; };
 		0A6F9EB21BB9BA9100CF2552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6F9EB71BB9BA9100CF2552 /* DataGraphsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataGraphsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6F9EBC1BB9BA9100CF2552 /* DataGraphsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphsTests.swift; sourceTree = "<group>"; };
 		0A6F9EBE1BB9BA9100CF2552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A6F9EC71BB9BADD00CF2552 /* CircularGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		0A6F9EAF1BB9BA9100CF2552 /* DataGraphs */ = {
 			isa = PBXGroup;
 			children = (
+				0A6F9EC71BB9BADD00CF2552 /* CircularGraphView.swift */,
+				0A3D50221BC3F8F50052C952 /* StandardGraphView.swift */,
+				0A3D50231BC3F8F50052C952 /* TimeBasedGraphView.swift */,
 				0A6F9EB01BB9BA9100CF2552 /* DataGraphs.h */,
 				0A6F9EB21BB9BA9100CF2552 /* Info.plist */,
 			);
@@ -142,6 +151,7 @@
 		0A6F9EA41BB9BA9100CF2552 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Mateus Reckziegel";
 				TargetAttributes = {
@@ -193,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3D50241BC3F8F50052C952 /* StandardGraphView.swift in Sources */,
+				0A6F9ECA1BB9BADD00CF2552 /* CircularGraphView.swift in Sources */,
+				0A3D50251BC3F8F50052C952 /* TimeBasedGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +320,7 @@
 		0A6F9EC21BB9BA9100CF2552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MateusReckziegel.DataGraphs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0A6F9EC31BB9BA9100CF2552 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +391,7 @@
 				0A6F9EC31BB9BA9100CF2552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6F9EC41BB9BA9100CF2552 /* Build configuration list for PBXNativeTarget "DataGraphsTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +400,7 @@
 				0A6F9EC61BB9BA9100CF2552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
