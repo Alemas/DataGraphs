@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A3D50241BC3F8F50052C952 /* StandardGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D50221BC3F8F50052C952 /* StandardGraphView.swift */; settings = {ASSET_TAGS = (); }; };
 		0A3D50251BC3F8F50052C952 /* TimeBasedGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D50231BC3F8F50052C952 /* TimeBasedGraphView.swift */; settings = {ASSET_TAGS = (); }; };
+		0A3D50261BC3FCA00052C952 /* DataGraphs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6F9EAD1BB9BA9100CF2552 /* DataGraphs.framework */; settings = {ASSET_TAGS = (); }; };
 		0A6F9EB11BB9BA9100CF2552 /* DataGraphs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6F9EB01BB9BA9100CF2552 /* DataGraphs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A6F9EB81BB9BA9100CF2552 /* DataGraphs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6F9EAD1BB9BA9100CF2552 /* DataGraphs.framework */; settings = {ASSET_TAGS = (); }; };
 		0A6F9EBD1BB9BA9100CF2552 /* DataGraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F9EBC1BB9BA9100CF2552 /* DataGraphsTests.swift */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3D50261BC3FCA00052C952 /* DataGraphs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
